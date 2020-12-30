@@ -3,13 +3,12 @@
 
   <head>
     <meta charset='utf-8'>
-    <meta name="title" content="Spaceboards">
+		<meta name="title" content="Spaceboards">
     <meta name="description" content="Welcome to Spaceboards, a site for all of Spaceman’s Projects">
     <meta name="keywords" content="KiCad,Keyboard,Python,PCB,Electronic Engineering">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110758958-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -20,22 +19,15 @@
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=e8880e901bfbf11e00d17fed526512d786cb85c4">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Contact | Spaceboards</title>
-<meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Contact" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://spaceboards.xyz/contact" />
-<meta property="og:url" content="https://spaceboards.xyz/contact" />
-<meta property="og:site_name" content="Spaceboards" />
-<script type="application/ld+json">
-{"@type":"WebPage","url":"https://spaceboards.xyz/contact","headline":"Contact","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
+		<title>Pancake build | Spaceboards</title>
+		<meta property="og:title" content="Pancake build" />
+		<meta property="og:locale" content="en_US" />
+		<link rel="canonical" href="https://spaceboards.xyz/pancakebuild" />
+		<meta property="og:url" content="https://spaceboards.xyz/pancakebuild" />
+		<meta property="og:site_name" content="Spaceboards" />
   </head>
-
   <body>
 
     <!-- HEADER -->
@@ -51,24 +43,32 @@
         </header>
     </div>
 
+
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2 id="contact-me">Contact Me</h2>
-
-<p>Feel free to join my personal discord server to keep up with my current projects!
-<a href="https://discord.gg/7GmTPFU">https://discord.gg/7GmTPFU</a></p>
-
-<p>You can contact me on <a href="https://www.reddit.com/user/rionlion100">Reddit</a>, find me on the <a href="https://discord.gg/WT6KYXf">40% Discord</a> or fill out the form below and I will send you an email ASAP.</p>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdaIolXNUslq1E2fWxGOvE65Bh-pJdhW_zQQmM9QtntQyHs1Q/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <h2 id="build-guide-for-pancake">Build guide for Pancake</h2>
+<ul>
+  <li>Add diodes and solder them in. The band (cathode) of the diode goes with the square pad.</li>
+  <li>Tin SMD pads at the top of the backside of the PCB and Solder them on
+    <ul>
+      <li>This guide can be extremely helpful <a href="https://www.youtube.com/watch?v=VxMV6wGS3NY">https://www.youtube.com/watch?v=VxMV6wGS3NY</a></li>
+    </ul>
+  </li>
+  <li>Solder on the Pro Micro \ Feather headers</li>
+  <li>Solder switches onto the PCB</li>
+  <li><a href="https://github.com/Rionlion100/qmk_newbs-guide/blob/master/simple.md">Flash your Pro micro / Feather with QMK</a></li>
+  <li>Solder the pro micro or Feather with the components facing away from the PCB</li>
+  <li>Plugin the Li-Po battery to feather to see if it works (CAUTION! if your lipo does not have the black ‘negative’ lead closest to the USB port DO NOT plug it in as it will fry your feather!)</li>
+  <li>Screw the PCB to the backplate.</li>
+  <li>Throw on some rubber bumpons and Enjoy!</li>
+</ul>
 
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
-      <img src="https://raw.githubusercontent.com/Spaceman/spaceman.github.io/master/assets/images/Spaceboard_Silk-02.png" alt="Logo" width="10%" align="right">
       <footer class="inner">
         
       </footer>
