@@ -3,29 +3,29 @@
 
   <head>
     <meta charset='utf-8'>
-    <meta name="title" content="Spaceboards">
+		<meta name="title" content="Spaceboards">
     <meta name="description" content="Welcome to Spaceboards, a site for all of Spaceman’s Projects">
     <meta name="keywords" content="KiCad,Keyboard,Python,PCB,Electronic Engineering">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110758958-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-			gtag('config', 'UA-110758958-2');
-		</script>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+      gtag('config', 'UA-110758958-2');
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-		<title>Homepage | Spaceboards</title>
-		<meta property="og:title" content="Homepage" />
+		<title>Pancake build | Spaceboards</title>
+		<meta property="og:title" content="Pancake build" />
 		<meta property="og:locale" content="en_US" />
-		<link rel="canonical" href="https://spaceboards.xyz/" />
-		<meta property="og:url" content="https://spaceboards.xyz/" />
+		<link rel="canonical" href="https://spaceboards.xyz/pancakebuild" />
+		<meta property="og:url" content="https://spaceboards.xyz/pancakebuild" />
 		<meta property="og:site_name" content="Spaceboards" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -49,17 +49,28 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2 id="homepage">Homepage</h2>
-
-				<h3 id="welcome-to-spaceboards-a-site-for-all-of-spacemans-projects">Welcome to Spaceboards, a site for all of Spaceman’s Projects</h3>
-
-				<p>I am a coder and PCB designer with love for all things DIY. Most of my projects are for fun, feel free to improve them and make them better! I’ve put countless hours into making silly projects such as <a href="https://github.com/Rionlion100/Spaceboards/tree/master/Keyboards/2%25%20Milk">2% Milk</a>. I’m willing to design a PCB for any keyboard all you have to do is shoot me a message, If I love the project enough I may even be willing to do it for free, so go ahead and send me your amazing ideas! I can also create QMK Firmware for it so no need to worry about that.</p>
-
+        <h2 id="build-guide-for-pancake">Build guide for Pancake</h2>
+				<ul>
+					<li>Add diodes and solder them in. The band (cathode) of the diode goes with the square pad.</li>
+					<li>Tin SMD pads at the top of the backside of the PCB and Solder them on
+						<ul>
+							<li>This guide can be extremely helpful <a href="https://www.youtube.com/watch?v=VxMV6wGS3NY">https://www.youtube.com/watch?v=VxMV6wGS3NY</a></li>
+						</ul>
+					</li>
+					<li>Solder on the Pro Micro \ Feather headers</li>
+					<li>Solder switches onto the PCB</li>
+					<li><a href="https://github.com/Rionlion100/qmk_newbs-guide/blob/master/simple.md">Flash your Pro micro / Feather with QMK</a></li>
+					<li>Solder the pro micro or Feather with the components facing away from the PCB</li>
+					<li>Plugin the Li-Po battery to feather to see if it works (CAUTION! if your lipo does not have the black ‘negative’ lead closest to the USB port DO NOT plug it in as it will fry your feather!)</li>
+					<li>Screw the PCB to the backplate.</li>
+					<li>Throw on some rubber bumpons and Enjoy!</li>
+				</ul>
       </section>
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">        
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
       </footer>
     </div>
 
