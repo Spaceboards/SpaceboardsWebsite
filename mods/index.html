@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceboards</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/filter.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    </style>
+</head>
+
+<body style="font-family:'Lexend Deca', sans-serif;background-color:#171717;">
+    <div style="color:121212;background-color:#2d2d2d;">
+        <div class="d-table mx-auto" style="color:#d9d9d9;padding:5px;">
+            <h1 class="text-center" style="padding:5px;"><a class="mynav" href="../">Spaceboards</a></h1>
+            <div class="table-responsive d-table" style="max-width:25%;">
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="cell"><a class="mynav" href="../hardware" target="_self">Hardware</a></td>
+                            <td class="cell"><a class="mynav" href="../software" target="_self">Software</a></td>
+                            <td class="cell"><a class="mynav" href="../mods" target="_self">Mods</a></td>
+                            <td class="cell"><a class="mynav" href="../contact" target="_self">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="margin:auto;max-width:800px;padding:15px;">
+        <div class="card" style="color:#363636;">
+            <div class="card-body" style="background-color:#2d2d2d;color:#2d2d2d;">
+                <h4 class="card-title" style="color:#bcbcbc;">Mods</h4>
+                <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">A collection of game mods developed by
+                    Spaceman<br></h6>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('minecraft')">Minecraft</button>
+                    <button class="btn" onclick="filterSelection('eft')"> SPT-AKI</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="filterDiv show minecraft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">Fabric Secret Rooms</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">Minecraft</h6>
+                    <p> A reimaginated version of the early forge mod Secret Rooms.</p>
+                    <a href="https://github.com/Spaceman/FabricSecretRooms">Spaceman/FabricSecretRooms</a> <input
+                        type="button" class="download"
+                        onclick="location.href='https\:\/\/www.curseforge.com/minecraft/mc-mods/secret-rooms-fabric/files';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">spaceman-api</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p>A short description of the mod.</p>
+                    <a href="https://github.com/Spaceman/spaceman-api">Spaceman/spaceman-api</a> <input type="button"
+                        class="download" onclick="location.href='https\:\/\/github.com/Spaceman/spaceman-api/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">spaceman-fn_waffle</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p>A short description of the mod.</p>
+                    <a href="https://github.com/Spaceman/spaceman-fn_waffle">Spaceman/spaceman-fn_waffle</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/spaceman-fn_waffle/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">spaceman-mdr_blackout</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p>A short description of the mod.</p>
+                    <a href="https://github.com/Spaceman/spaceman-mdr_blackout">Spaceman/spaceman-mdr_blackout</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/spaceman-mdr_blackout/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">spaceman-glock_extras</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p>A short description of the mod.</p>
+                    <a href="https://github.com/Spaceman/spaceman-glock_extras">Spaceman/spaceman-glock_extras</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/spaceman-glock_extras/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">Z_AdditionalGear_WeaponModule</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p>A short description of the mod.</p>
+                    <a
+                        href="https://github.com/Spaceman/Z_AdditionalGear_WeaponModule">Spaceman/Z_AdditionalGear_WeaponModule</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/Z_AdditionalGear_WeaponModule/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">ConsoleCommands</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p>Adds a few useful console commands to the game such as "godmode" and "heal".</p>
+                    <a href="https://github.com/Spaceman/ConsoleCommands">Spaceman/ConsoleCommands</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/ConsoleCommands/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">Hardcore</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p> Prevents the user from changing the settings before a raid.</p>
+                    <a href="https://github.com/Spaceman/Hardcore">Spaceman/Hardcore</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/Hardcore/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv show eft" style="margin:auto;max-width:800px;padding:15px;">
+            <div class="card" style="color:#bcbcbc;">
+                <div class="card-body" style="background-color:#2d2d2d;color:#bcbcbc;">
+                    <h4 class="card-title" style="color:#bcbcbc;">PrettyUI</h4>
+                    <h6 class="text-muted card-subtitle mb-2" style="color:#bcbcbc;">SPT-AKI</h6>
+                    <p> Removes the beta warning from the main menu of SPT-AKI.</p>
+                    <a href="https://github.com/Spaceman/PrettyUI">Spaceman/PrettyUI</a>
+                    <input type="button" class="download"
+                        onclick="location.href='https\:\/\/github.com/Spaceman/PrettyUI/releases';"
+                        value="Download"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

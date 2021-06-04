@@ -1,84 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
-  <meta charset='utf-8'>
-  <meta name="title" content="Spaceboards">
-  <meta name="description" content="Welcome to Spaceboards, a site for all of Spaceman’s Projects">
-  <meta name="keywords" content="KiCad,Keyboard,Python,PCB,Electronic Engineering">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110758958-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110758958-2');
-  </script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
-  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <title>Pancake build | Spaceboards</title>
-  <meta property="og:title" content="Pancake build" />
-  <meta property="og:locale" content="en_US" />
-  <link rel="canonical" href="https://spaceboards.xyz/pancakebuild" />
-  <meta property="og:url" content="https://spaceboards.xyz/pancakebuild" />
-  <meta property="og:site_name" content="Spaceboards" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceboards</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    </style>
 </head>
 
-<body>
+<body style="font-family:'Lexend Deca', sans-serif;background-color:#171717;">
+    <div style="color:121212;background-color:#2d2d2d;">
+        <div class="d-table mx-auto" style="color:#d9d9d9;padding:5px;">
+            <h1 class="text-center" style="padding:5px;"><a class="mynav" href="../../">Spaceboards</a></h1>
+            <div class="table-responsive d-table" style="max-width:25%;">
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="cell"><a class="mynav" href="../../hardware" target="_self">Hardware</a></td>
+                            <td class="cell"><a class="mynav" href="../../software" target="_self">Software</a></td>
+                            <td class="cell"><a class="mynav" href="../../mods" target="_self">Mods</a></td>
+                            <td class="cell"><a class="mynav" href="../../contact" target="_self">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex" style="margin:auto;max-width:800px;padding:15px;">
+        <div class="card" style="color:#bcbcbc;">
+            <div class="card-body" style="background-color:#2d2d2d;">
+                <h4 class="card-title" style="color:#bcbcbc;">Pancake Build Guide</h4>
 
-  <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <header class="inner">
-      <h1 id="project_title">Spaceboards</h1>
-      <h2 id="project_tagline"></h2>
-      <a id="nav" href="/"> Homepage</a>
-      <a id="nav" href="/hardware">Hardware</a>
-      <a id="nav" href="/software">Software</a>
-      <a id="nav" href="/contact">Contact Us</a>
-
-    </header>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-      <h2 id="build-guide-for-pancake">Build guide for Pancake</h2>
-      <ul>
-        <li>Add diodes and solder them in. The band (cathode) of the diode goes with the square pad.</li>
-        <li>Tin SMD pads at the top of the backside of the PCB and Solder them on
-          <ul>
-            <li>This guide can be extremely helpful <a
-                href="https://www.youtube.com/watch?v=VxMV6wGS3NY">https://www.youtube.com/watch?v=VxMV6wGS3NY</a></li>
-          </ul>
-        </li>
-        <li>Solder on the Pro Micro \ Feather headers</li>
-        <li>Solder switches onto the PCB</li>
-        <li><a href="https://github.com/Rionlion100/qmk_newbs-guide/blob/master/simple.md">Flash your Pro micro /
-            Feather with QMK</a></li>
-        <li>Solder the pro micro or Feather with the components facing away from the PCB</li>
-        <li>Plugin the Li-Po battery to feather to see if it works (CAUTION! if your lipo does not have the black
-          ‘negative’ lead closest to the USB port DO NOT plug it in as it will fry your feather!)</li>
-        <li>Screw the PCB to the backplate.</li>
-        <li>Throw on some rubber bumpons and Enjoy!</li>
-      </ul>
-    </section>
-  </div>
-
-  <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-    <footer class="inner">
-    </footer>
-  </div>
-
-
+                <ul>
+                    <li>Add diodes and solder them in. The band (cathode) of the diode goes with the square pad.</li>
+                    <li>Tin SMD pads at the top of the backside of the PCB and Solder them on
+                      <ul>
+                        <li>This guide can be extremely helpful <a
+                            href="https://www.youtube.com/watch?v=VxMV6wGS3NY">https://www.youtube.com/watch?v=VxMV6wGS3NY</a></li>
+                      </ul>
+                    </li>
+                    <li>Solder on the Pro Micro \ Feather headers</li>
+                    <li>Solder switches onto the PCB</li>
+                    <li><a href="https://github.com/Rionlion100/qmk_newbs-guide/blob/master/simple.md">Flash your Pro micro /
+                        Feather with QMK</a></li>
+                    <li>Solder the pro micro or Feather with the components facing away from the PCB</li>
+                    <li>Plugin the Li-Po battery to feather to see if it works (CAUTION! if your lipo does not have the black
+                      ‘negative’ lead closest to the USB port DO NOT plug it in as it will fry your feather!)</li>
+                    <li>Screw the PCB to the backplate.</li>
+                    <li>Throw on some rubber bumpons and Enjoy!</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

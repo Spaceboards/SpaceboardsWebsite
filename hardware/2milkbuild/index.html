@@ -1,79 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
-  <meta charset='utf-8'>
-  <meta name="title" content="Spaceboards">
-  <meta name="description" content="Welcome to Spaceboards, a site for all of Spaceman’s Projects">
-  <meta name="keywords" content="KiCad,Keyboard,Python,PCB,Electronic Engineering">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110758958-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110758958-2');
-  </script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
-  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <title>2% Milk build | Spaceboards</title>
-  <meta property="og:title" content="2% Milk build" />
-  <meta property="og:locale" content="en_US" />
-  <link rel="canonical" href="https://spaceboards.xyz/2milkbuild" />
-  <meta property="og:url" content="https://spaceboards.xyz/2milkbuild" />
-  <meta property="og:site_name" content="Spaceboards" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceboards</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    </style>
 </head>
 
-<body>
+<body style="font-family:'Lexend Deca', sans-serif;background-color:#171717;">
+    <div style="color:121212;background-color:#2d2d2d;">
+        <div class="d-table mx-auto" style="color:#d9d9d9;padding:5px;">
+            <h1 class="text-center" style="padding:5px;"><a class="mynav" href="../../">Spaceboards</a></h1>
+            <div class="table-responsive d-table" style="max-width:25%;">
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="cell"><a class="mynav" href="../../hardware" target="_self">Hardware</a></td>
+                            <td class="cell"><a class="mynav" href="../../software" target="_self">Software</a></td>
+                            <td class="cell"><a class="mynav" href="../../mods" target="_self">Mods</a></td>
+                            <td class="cell"><a class="mynav" href="../../contact" target="_self">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex" style="margin:auto;max-width:800px;padding:15px;">
+        <div class="card" style="color:#bcbcbc;">
+            <div class="card-body" style="background-color:#2d2d2d;">
+                <h4 class="card-title" style="color:#bcbcbc;">2% Milk Build Guide</h4>
 
-  <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <header class="inner">
-      <h1 id="project_title">Spaceboards</h1>
-      <h2 id="project_tagline"></h2>
-      <a id="nav" href="/"> Homepage</a>
-      <a id="nav" href="/hardware">Hardware</a>
-      <a id="nav" href="/software">Software</a>
-      <a id="nav" href="/contact">Contact Us</a>
-
-    </header>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-      <h2 id="build-guide-for-2-milk">Build guide for 2% Milk</h2>
-
-      <ul>
-        <li>Put switches into top of the case with led slots pointed away from the port</li>
-        <li>Solder headers to milk PCB with the 40% logo and the short pins on the same side</li>
-        <li>(Optional) Solder 4cm wire to each of the RGB pins</li>
-        <li>Put PCB and solder switches to it (make sure that the orientation is correct)</li>
-        <li>Solder Pro Micro to headers (I recommend that you only solder these headers as they are the only ones that
-          are used)
-          <img
-            src="https://cdn.discordapp.com/attachments/573167349595635722/608095108633460748/IMG_20190805_183604398_HDR.jpg"
-            alt="Pins" />
-        </li>
-        <li>(Optional) Trim headers on Pro Micro</li>
-        <li>(Optional) Solder RGB Led to wires and attach to bottom of Pro Micro</li>
-        <li>Program with QMK and enjoy</li>
-      </ul>
-
-    </section>
-  </div>
-  <div id="footer_wrap" class="outer">
-    <footer class="inner">
-    </footer>
-  </div>
+                <ul>
+                    <li>Put switches into top of the case with led slots pointed away from the port</li>
+                    <li>Solder headers to milk PCB with the 40% logo and the short pins on the same side</li>
+                    <li>(Optional) Solder 4cm wire to each of the RGB pins</li>
+                    <li>Put PCB and solder switches to it (make sure that the orientation is correct)</li>
+                    <li>Solder Pro Micro to headers (I recommend that you only solder these headers as they are the only
+                        ones that
+                        are used)
+                        <div class="click-zoom">
+                            <label>
+                                <input type="checkbox">
+                                <img width="60%"
+                                    style="box-shadow: 2px 2px 15px #171717; display: block; margin-top: 15px; margin-bottom: 15px;"
+                                    src="https://cdn.discordapp.com/attachments/573167349595635722/608095108633460748/IMG_20190805_183604398_HDR.jpg"
+                                    alt="Pins" />
+                            </label>
+                        </div>
+                    </li>
+                    <li>(Optional) Trim headers on Pro Micro</li>
+                    <li>(Optional) Solder RGB Led to wires and attach to bottom of Pro Micro</li>
+                    <li>Program with QMK and enjoy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
